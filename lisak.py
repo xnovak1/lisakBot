@@ -24,8 +24,8 @@ async def on_message(message: discord.Message):
     if message.author == client.user:
         return
 
-    if message.content.startswith('$hello'):
-        await message.channel.send('Hello!')
+    if message.content.startswith('$nazdar'):
+        await message.channel.send('Nazdar!')
 
 
 client.run(os.getenv('TOKEN'), log_handler=handler)
